@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import kr.tjeit.pizzastoreapp_20200422.R
 import kr.tjeit.pizzastoreapp_20200422.datas.Store
 
@@ -24,6 +25,15 @@ class StoreAdapter(context: Context, resId:Int, list:ArrayList<Store>) : ArrayAd
         }
 
         val row = tempRow!!
+
+
+        val LogoImg = row.findViewById<ImageView>(R.id.LogoImg)
+
+        val storeData = mList.get(position)
+
+        storeName.text = storeData.name
+        Glide
+
 
 
         return row
