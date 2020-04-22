@@ -3,6 +3,7 @@ package kr.tjeit.pizzastoreapp_20200422
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_main.*
 import kr.tjeit.pizzastoreapp_20200422.adapters.StoreAdapter
 import kr.tjeit.pizzastoreapp_20200422.datas.Store
@@ -20,6 +21,10 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
+
+        pizzaStoreListView.setOnClickListener { parent }
+
+        val myIntent = Intent
 
     }
 
